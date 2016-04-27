@@ -1,0 +1,50 @@
+print('This is the magic 8 ball of Austin Barnett')
+
+import random
+import string
+import time
+
+#answers
+
+a = 'It is certain'
+b = 'I wearily answer yes'
+c = 'Without a doubt'
+d = 'Yes – definitely'
+e = 'you may rely on it'
+f = 'To me it looks like a yes'
+g = 'Most likely'
+h = 'Positive outlook'
+i = 'Yes'
+j = 'Signs point to a yes'
+k = 'Answer not available, try again'
+l = 'Try again later'
+m = 'I should not tell you the answer to that now'
+n = 'Cannot predict your answer'
+o = 'Concentrate and ask again'
+p = 'Don\'t count on it'
+q = 'My reply is a no'
+r = 'My sources say no'
+s = 'Outlook not so good'
+t = 'Very doubtful'
+u = 'This is a very bad question'
+
+
+play = 'yes'
+
+
+
+def game():
+    print('Welcome to the magic 8 ball where you will have an experience like never before')
+    time.sleep(2)
+    input('Ask me a question and I will give you the answer to your future: ')
+    time.sleep(3)
+    answer = random.choice([a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u])
+    print(answer)
+
+
+while play == 'yes':
+        game()
+        play = input('Do you want to give me another shake yes or no? ')
+    
+print('Thank you for asking the magic 8 ball I hope your return soon with more question on what is to be')
+    
