@@ -1,0 +1,54 @@
+print('This program is meant to predict your emotional status by the end of the day')
+
+import random
+import string
+import time
+
+#answer
+
+a = 'You will be positive by the end of the night'
+b = 'You will be negative by the end of the night'
+c = 'You will feel happy by the end of the night'
+d = 'You will feel sadness by the end of the night'
+e = 'You will be surprised by the end of the night'
+f = 'You will be nervous by the end of the night'
+g = 'You will be excited by the end of the night'
+h = 'Your emotions are only what you think'
+i = 'Your emotions can not be read at the moment'
+j = 'Please try again later'
+k = 'Your emotions are not looking postive'
+l = 'Your emotions are looking positive'
+m = 'I do not knwo your emotions for later but I can tell you have emotions....'
+
+play = 'yes'
+
+def game():
+    print('Welcome to the emotion reader, lets see how you will feel by tonight')
+    time.sleep(1)
+    print('I will now ask you a few questions about your self and your day')
+    time.sleep(1)
+    print('How has your Day been?')
+    Day=input()
+    print('Are you Thinking about something from today?')
+    Thinking=input()
+    print('Who was one Person you wish you spoke with today?')
+    Person=input()
+    print('Did anything out of the Ordinary happen to you today?')
+    Ordinary=input()
+    print('Beleive it or not you have had a special day today')
+    print('One last question, have you had any Regrets today?')
+    Regrets=input()
+    print('Oh, one last thing, what is your age?')
+    Age=input()
+    print('Okay I now know everything I need')
+    input('Now ask me what I think your emotional state will be by the end of tonight: ')
+    time.sleep(3)
+    answer = random.choice([a, b, c, d, e, f, g, h, i, j, k, l, m])
+    print(answer)
+
+
+while play == 'yes':
+        game()
+        play = input('Do you want to give my thoughts another try, you may not have been truthful? ')
+
+
